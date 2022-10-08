@@ -1,0 +1,177 @@
+<html lang="pt-br">
+
+<!--
+    https://cachemonet.com/
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css" media="all">
+        .foreImg{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);     
+            background-repeat: no-repeat;
+            background-size: 25%;
+            background-position: center;
+        }
+        .backImg{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-repeat: repeat;
+            background-size: auto;
+        }
+        
+        h4, h3{
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);     
+            color: yellow;
+            cursor: pointer;
+            title: "CLICA AI";
+            font-size: 32px;
+            text-shadow: 0 1px 0 #dede00, 0 2px 0 #ced106, 
+            0 3px 0 #b8b202, 0 4px 0 #b8c200, 0 5px 0 #a7b000, 0 6px 1px
+            rgba(0, 0, 0, 1), 0 0 5px rgba(0, 0, 0, 1), 0 1px 3px
+            rgba(0, 0, 0, 1), 0 3px 5px rgba(0, 0, 0, 1), 0 5px 10px
+            rgba(0, 0, 0, 1), 0 10px 10px rgba(0, 0, 0, 1), 0 20px 20px
+            rgba(0, 0, 0, 1);
+        }
+
+        h4, body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        body{
+            background-color: white;
+        }
+        
+    </style>
+
+    <!-- React Online -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <h4 title="Feito pela: Thalia"><b>Feito pela: Thalia</b></h4>
+
+    <div id="root"></div>
+    <script type="text/babel">
+        
+        const lenBackImg = 7, lenForeImg = 7;
+        
+        function Aleatorio(max){
+            return Math.floor(Math.random() * max + 1);
+        }
+        
+        function Background(props) {
+            let index = props.index;
+            
+            const [imagem, setImagens] = React.useState([
+                "https://i.stack.imgur.com/kyKz5.png",
+                "https://cachemonet.com/src/bg/95.gif",
+                "https://cachemonet.com/src/bg/MoneyNotesFlying.gif",
+                "https://cachemonet.com/src/bg/aimrain.gif",
+                "https://cachemonet.com/src/bg/argentina.gif",
+                "https://cachemonet.com/src/bg/aus.gif",
+                "https://cachemonet.com/src/bg/blinds.gif",
+                "https://cachemonet.com/src/bg/boxes.gif"
+            ]);
+            
+            const estilo = {
+                backgroundImage: `url(${imagem[index]})`
+            };
+            
+            return (
+                <div class="backImg" style={estilo}></div>
+            );
+        }
+        
+        function Foreground(props) {
+            let index = props.index;
+            
+            const [imagem, setImagens] = React.useState([
+                "https://cachemonet.com/src/center/14_4.gif",
+                "https://cachemonet.com/src/center/40oz.gif",
+                "https://cachemonet.com/src/center/bird.gif",
+                "https://cachemonet.com/src/center/blackcat.gif",
+                "https://cachemonet.com/src/center/cat.gif",
+                "https://cachemonet.com/src/center/cd.gif",
+                "https://cachemonet.com/src/center/chill.gif",
+                "https://cachemonet.com/src/center/chip.gif"
+            ]);
+            
+            const estilo = {
+                backgroundImage: `url(${imagem[index]})`,
+            };
+            
+            return (
+                <div class="foreImg" style={estilo}></div>
+            );
+        }
+
+        function App(props) {
+
+            const [textos, setTextos] = React.useState([
+                "Sua opinião pra mim é igual a anúncio do Youtube: eu ignoro em 5 segundos",
+                "Já vi muito amor eterno acabar em poucos segundos.",
+                "Disseram que era inferno astral mas já faz uns meses que minha vida tá ruim.",
+                "O melhor final feliz que existe é o final de semana.",
+                "Se errar é humano, acertar deve ser coisa de extraterrestre.",
+                "O amor está mesmo cego, pois não me vê de jeito nenhum.",
+                "Deus ajuda quem cedo ganha na loteria.",
+                "Não me jogue indiretas. Me jogue dinheiro.",
+            ]);
+
+            const [Random, setRandom] = React.useState({
+               texto: Aleatorio(lenForeImg),
+               back: Aleatorio(lenBackImg),
+               fore: Aleatorio(lenForeImg),
+            });
+            
+            const mudar = ()=> {setRandom({
+               texto: Aleatorio(7),
+               back: Aleatorio(lenBackImg),
+               fore: Aleatorio(lenForeImg),
+            })};
+            
+            return (<>
+                <Background index={Random.back}/>
+                <Foreground index={Random.fore}/> 
+                <h3 class="texto" onClick={() => mudar()}><b>{textos[Random.texto]}</b></h3>
+            </>); 
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+
+    </script>
+    <audio id="sound" loop="" autoplay="" preload="">
+	    <source src="src/windowdipper.mp3" type="audio/mpeg">
+	    <source src="src/windowdipper.ogg" type="audio/ogg">
+    </audio>
+</body>
+
+</html>
+
+
+
+
+
