@@ -1,23 +1,31 @@
-function Aleatorio(max) {
+const Aleatorio = (max) => {
+    // Checking if max variable is null or false
+    if ( !max ) {
+        return false;
+    }
+    
     return Math.floor(Math.random() * max);
 }
 
-function MusicPlay() {
-    document.getElementById('music').play();
-}
+const MusicPlay = () => document.getElementById('music').play();
 
-function AvisoClickNaTela(gatilho) {
-    boxClick = document.getElementById('box-click');
-    if (!gatilho) {
+const AvisoClickNaTela = (gatilho) => {
+
+    let boxClick = document.getElementById('box-click');
+    if (!gatilho) { 
         boxClick.style.opacity = "0%";
         boxClick.style.zIndex = "-1";
-    } else {
-        boxClick.style.opacity = "100%";
-        boxClick.style.zIndex = "3";
-    }
+        return;
+    } 
+
+    boxClick.style.opacity = "100%";
+    boxClick.style.zIndex = "3";
 }
 
 const linksImgBack = [
+    './src/back/poortugal.gif',
+    './src/back/spain_flag.gif',
+    './src/back/england_flag.gif',
     './src/back/95.gif',
     './src/back/95.gif',
     './src/back/catAscii.gif',
