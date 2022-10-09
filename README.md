@@ -1,4 +1,4 @@
-# Site Aleatório 😎
+# 🎲 Site Aleatório 🎲
 
 ## Um modelo de site feito em React unpkg usando gifs aleatórios. Inspirado no site cachemonet.com
 
@@ -15,7 +15,7 @@
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-## __😎 CONTATO__
+## __😘 CONTATO__
 <p align="left">
   <a href="https://github.com/LucasATS/"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Github"></a>
   &nbsp &nbsp &nbsp
