@@ -11,12 +11,11 @@
     <meta name="theme-color" content="#D089FF">
 
     <title>Aleatório</title>
-    <link rel="shortcut icon" href="src\eu_cartoon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/eu_cartoon1.png" type="image/x-icon">
 
     <!-- React Online -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <!-- Offine -->
@@ -80,6 +79,8 @@
                 console.log(linksImgBack[Random.back], linksImgFore[Random.fore], textos[Random.texto])
             };
 
+            // BUH :C A ideia é fazer o site atualizar as imagens automaticamente sem precisar ficar só clicando
+            // porém sem perder a função de clicar para atualizar.
             // React.useEffect(() => {
             //     setTimeout(() => {
             //         Mudar();
@@ -101,5 +102,4 @@
         <source src="./src/windowdipper.mp3" type="audio/mpeg">
     </video>
 </body>
-
 </html>
