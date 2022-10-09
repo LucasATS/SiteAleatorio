@@ -1,17 +1,16 @@
-<html lang="pt-br">
-
 <!--
     FEITO PELA THALIA https://github.com/LucasATS
     INSPIRADO EM https://cachemonet.com/ (As imagens, gifs e o audio foram extraídas desse site)
     Os textos foram extraídos desse site https://www.42frases.com.br/frases-curtas-e-engracadas/
 -->
 
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#D089FF">
 
-    <title>Site aleatório</title>
+    <title>Aleatório</title>
     <link rel="shortcut icon" href="src\eu_cartoon1.png" type="image/x-icon">
 
     <!-- React Online -->
@@ -26,39 +25,37 @@
 
 <body>
 
-    <!--<h4 title="Feito pela: Thalia"><b>Feito pelo: Lucas</b></h4>-->
-    <h4 title="Feito pela: Thalia"><b>Feito pela: Thalia</b></h4>
+    <!-- MEU CARIMBO - VISITE MINHA PÁGINA NO GITHUB :D -->
+    <a title="Visite minnha página no github" href="https://github.com/LucasATS"
+        style="position: fixed; right: 10px; bottom: 10px; z-index: 10;">
+        <img style="width: 60px; border-radius: 360px;" src="./src/github_icon.svg">
+    </a>
+
+    <!-- CLIQUE NA TELA -->
+    <div id="box-click" onclick="AvisoClickNaTela(false);" class="box-click">
+        <img style="width: 60px; border-radius: 360px;" src="./src/click.svg">
+        <p>CLIQUE NA TELA</p>
+    </div>
+
+    <!-- <h4 title="Feito pela: Thalia"><b>Feito pelo: Lucas</b></h4> -->
+    <h4 style="font-size: 4vh;" title="Feito pela: Thalia"><b>Feito pela: Thalia</b></h4>
 
     <div id="root"></div>
     <script type="text/babel">
-        const lenBackImg = 37, lenForeImg = 52, lenTexto = 8;
+        const lenBackImg = (linksImgFore.length - 1);
+        const lenForeImg = (linksImgFore.length - 1);
+        const lenTexto = (frases.length - 1);
 
         function DivImagem(props) {
-            let index = props.index;
-            let tipo = props.tipo;
+            let classe = props.classe;
+            let imagem = props.imagem;
 
-            let imagens = "";
-            let classe = "";
+            const estilo = { backgroundImage: `url(${imagem})`, };
 
-            if (tipo === "fore") {
-                imagens = linksImgFore;
-                classe = "foreImg";
-            } else {
-                imagens = linksImgBack;
-                classe = "backImg";
-            }
-
-            const estilo = {
-                backgroundImage: `url(${imagens[index]})`,
-            };
-
-            return (
-                <div class={classe} style={estilo}></div>
-            );
+            return (<div class={classe} style={estilo}></div>);
         }
 
         function App(props) {
-
             const [textos, setTextos] = React.useState(frases);
 
             const [Random, setRandom] = React.useState({
@@ -74,17 +71,19 @@
                     back: Aleatorio(lenBackImg),
                     fore: Aleatorio(lenForeImg),
                 });
+                AvisoClickNaTela(false);
+                console.log(linksImgBack[Random.back], linksImgFore[Random.fore], textos[Random.texto])
             };
 
-            React.useEffect(() => {
-                setTimeout(() => {
-                    Mudar();
-                }, 4000);
-            });
+            // React.useEffect(() => {
+            //     setTimeout(() => {
+            //         Mudar();
+            //     }, 4000);
+            // });
 
             return (<>
-                <DivImagem tipo="back" index={Random.back} />
-                <DivImagem tipo="fore" index={Random.fore} />
+                <DivImagem classe="backImg" imagem={linksImgBack[Random.back]} />
+                <DivImagem classe="foreImg" imagem={linksImgFore[Random.fore]} />
                 <h3 title="CLICA AÍ" class="texto" onClick={() => Mudar()}><b>{textos[Random.texto]}</b></h3>
             </>);
         }

@@ -1,16 +1,24 @@
-.foreImg{
+@media only screen and (orientation: portrait) {
+    .foreImg {
+        background-size: 50% !important;
+    }
+}
+
+.foreImg {
     z-index: 1;
     width: 100%;
     height: 100%;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);     
+    transform: translate(-50%, -50%);
     background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 50%;
     background-size: 25%;
-    background-position: center;
 }
-.backImg{
+
+.backImg {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -19,31 +27,68 @@
     background-size: auto;
 }
 
-h4, h3{
+p {
+    margin: 0;
+    color: yellow;
+    font-size: 3vh;
+    text-shadow: 0 1px 0 #dede00, 0 2px 0 #ced106,
+        0 3px 0 #b8b202, 0 4px 0 #b8c200, 0 5px 0 #a7b000, 0 6px 1px rgba(0, 0, 0, 1), 0 0 5px rgba(0, 0, 0, 1), 0 1px 3px rgba(0, 0, 0, 1), 0 3px 5px rgba(0, 0, 0, 1), 0 5px 10px rgba(0, 0, 0, 1), 0 10px 10px rgba(0, 0, 0, 1), 0 20px 20px rgba(0, 0, 0, 1);
+}
+
+h4,
+h3 {
     position: fixed;
     z-index: 2;
     width: 100%;
     height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);     
+    transform: translate(-50%, -50%);
     color: yellow;
     cursor: pointer;
-    font-size: 32px;
-    text-shadow: 0 1px 0 #dede00, 0 2px 0 #ced106, 
-    0 3px 0 #b8b202, 0 4px 0 #b8c200, 0 5px 0 #a7b000, 0 6px 1px
-    rgba(0, 0, 0, 1), 0 0 5px rgba(0, 0, 0, 1), 0 1px 3px
-    rgba(0, 0, 0, 1), 0 3px 5px rgba(0, 0, 0, 1), 0 5px 10px
-    rgba(0, 0, 0, 1), 0 10px 10px rgba(0, 0, 0, 1), 0 20px 20px
-    rgba(0, 0, 0, 1);
+    font-size: 6vh;
+    text-shadow: 0 1px 0 #dede00, 0 2px 0 #ced106,
+        0 3px 0 #b8b202, 0 4px 0 #b8c200, 0 5px 0 #a7b000, 0 6px 1px rgba(0, 0, 0, 1), 0 0 5px rgba(0, 0, 0, 1), 0 1px 3px rgba(0, 0, 0, 1), 0 3px 5px rgba(0, 0, 0, 1), 0 5px 10px rgba(0, 0, 0, 1), 0 10px 10px rgba(0, 0, 0, 1), 0 20px 20px rgba(0, 0, 0, 1);
 }
 
-h4, body {
+h4,
+body {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-body{
+body {
     background-color: white;
+}
+
+.box-click {
+    position: fixed;
+    z-index: 3;
+
+    opacity: 100%;
+    
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+
+    width: 100px;
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0.35);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+}
+
+:root {
+    --animacao-delay: 0.2s;
+}
+
+/* ANIMAÇÃO  */
+.box-click, .foreImg, .backImg, p, h4, h3 {
+    -moz-transition: var(--animacao-delay);
+    -o-transition: var(--animacao-delay);
+    -webkit-transition: var(--animacao-delay);
+    transition: var(--animacao-delay);
 }

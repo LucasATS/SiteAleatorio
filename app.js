@@ -6,8 +6,21 @@ function MusicPlay() {
     document.getElementById('music').play();
 }
 
+function AvisoClickNaTela(gatilho) {
+    boxClick = document.getElementById('box-click');
+    if (!gatilho) {
+        boxClick.style.opacity = "0%";
+        boxClick.style.zIndex = "-1";
+    } else {
+        boxClick.style.opacity = "100%";
+        boxClick.style.zIndex = "3";
+    }
+}
+
 const linksImgBack = [
     './src/back/95.gif',
+    './src/back/95.gif',
+    './src/back/catAscii.gif',
     './src/back/aimrain.gif',
     './src/back/argentina.gif',
     './src/back/aus.gif',
@@ -47,6 +60,7 @@ const linksImgBack = [
 ]
 
 const linksImgFore = [
+    './src/fore/14_4.gif',
     './src/fore/14_4.gif',
     './src/fore/40oz.gif',
     './src/fore/bike.gif',
@@ -110,4 +124,16 @@ const frases = [
     'O amor está mesmo cego, pois não me vê de jeito nenhum.',
     'Deus ajuda quem cedo ganha na loteria.',
     'Não me jogue indiretas. Me jogue dinheiro.',
+    'Se a vida estiver muito amarga, dá uma rebolada. Às vezes o açúcar tá no fundo.',
+    'Larguei a cerveja, só não lembro onde!',
+    'Se estiver entediado lave a louça, e se não estiver lave mesmo assim. Assinado, Mãe.',
+    'Sua mensagem foi recebida, visualizada e ignorada com sucesso.',
+    'Não acho nem a ponta do durex, imagine o amor da minha vida.',
+    'Houve boatos de que eu estava na pior... Podem confirmar os boatos!',
+    'O mundo dá voltas. Isso explica tanta gente tonta!',
+    'Adorei a indireta que você me mandou. Vou até curtir pra te irritar mais',
+    'Só não namoro você porque não sei se você aguentaria tanta felicidade na sua vida.',
+    'Eu não acordo de mau humor. Só acordo com preguiça de ser legal.',
+    'Sabe aquele gelo que você me deu? Fiz um iglu.',
+    'Estado Civil: Curtindo carreira solo com participações especiais.',
 ]
