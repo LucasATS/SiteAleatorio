@@ -27,7 +27,6 @@ const linksImgBack = [
     './src/back/spain_flag.gif',
     './src/back/england_flag.gif',
     './src/back/95.gif',
-    './src/back/95.gif',
     './src/back/catAscii.gif',
     './src/back/aimrain.gif',
     './src/back/argentina.gif',
@@ -68,7 +67,6 @@ const linksImgBack = [
 ]
 
 const linksImgFore = [
-    './src/fore/14_4.gif',
     './src/fore/14_4.gif',
     './src/fore/40oz.gif',
     './src/fore/bike.gif',
