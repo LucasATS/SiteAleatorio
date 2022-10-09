@@ -9,6 +9,10 @@
 [![preview](./.github/preview.png)](https://lucasats.github.io/SiteAleatorio/)
 [ACESSAR SITE](https://lucasats.github.io/SiteAleatorio/)
 
+## __❤ AGRADECIMENTOS__
+[Daniel Olivet](https://github.com/daniolivet)
+"I have added new gifs to your pool and refactoring index.js code, I hope it comes in handing :)"
+
 ## __🛠 TECNOLOGIA__
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
