@@ -15,6 +15,7 @@
 - [ ] Criar um sistema de compartilhamento
   Irá tirar um shotscreen da tela, com o link da pagina do site, podendo ser compartilhada nas redes sociais.
 - [ ] Sistema para trocar as gifs randomicamente de forma automatica sem interroper o sistema manual.
+- [x] Adicionar SEO na página.
 - [x] Sistema de troca de gifs.
 - [x] Sistema de troca de textos.
 
