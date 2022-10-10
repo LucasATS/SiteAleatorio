@@ -2,7 +2,7 @@
 
 ## Um modelo de site feito em React unpkg usando gifs aleatórios. Inspirado no site cachemonet.com
 
-## Ajude-nos, a melhorar o site 🥺❤️
+## Ajude-nos, a melhorar o site 🤩❤️
 
     FEITO POR https://github.com/LucasATS
     INSPIRADO EM https://cachemonet.com/ (A maioria das imagens, gifs e o audio foram extraídas desse site)
