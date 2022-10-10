@@ -12,11 +12,11 @@
 [ACESSAR SITE](https://lucasats.github.io/SiteAleatorio/)
 
 ## __🎯 METAS__
-[ ] Criar um sistema de compartilhamento
+- [ ] Criar um sistema de compartilhamento
   Irá tirar um shotscreen da tela, com o link da pagina do site, podendo ser compartilhada nas redes sociais.
-[ ] Sistema para trocar as gifs randomicamente de forma automatica sem interroper o sistema manual.
-[x] Sistema de troca de gifs.
-[x] Sistema de troca de textos.
+- [ ] Sistema para trocar as gifs randomicamente de forma automatica sem interroper o sistema manual.
+- [x] Sistema de troca de gifs.
+- [x] Sistema de troca de textos.
 
 ## __❤ AGRADECIMENTOS__
 [Daniel Olivet](https://github.com/daniolivet)
