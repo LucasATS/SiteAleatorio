@@ -2,12 +2,21 @@
 
 ## Um modelo de site feito em React unpkg usando gifs aleatórios. Inspirado no site cachemonet.com
 
-    FEITO PELA THALIA https://github.com/LucasATS
-    INSPIRADO EM https://cachemonet.com/ (As imagens, gifs e o audio foram extraídas desse site)
+## Ajude-nos, a melhorar o site 🥺❤️
+
+    FEITO POR https://github.com/LucasATS
+    INSPIRADO EM https://cachemonet.com/ (A maioria das imagens, gifs e o audio foram extraídas desse site)
     Os textos foram extraídos desse site https://www.42frases.com.br/frases-curtas-e-engracadas/
 
 [![preview](./.github/preview.png)](https://lucasats.github.io/SiteAleatorio/)
 [ACESSAR SITE](https://lucasats.github.io/SiteAleatorio/)
+
+## __🎯 METAS__
+[ ] Criar um sistema de compartilhamento
+  Irá tirar um shotscreen da tela, com o link da pagina do site, podendo ser compartilhada nas redes sociais.
+[ ] Sistema para trocar as gifs randomicamente de forma automatica sem interroper o sistema manual.
+[x] Sistema de troca de gifs.
+[x] Sistema de troca de textos.
 
 ## __❤ AGRADECIMENTOS__
 [Daniel Olivet](https://github.com/daniolivet)

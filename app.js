@@ -1,6 +1,6 @@
 const Aleatorio = (max) => {
     // Checking if max variable is null or false
-    if ( !max ) {
+    if (!max) {
         return false;
     }
     
@@ -23,6 +23,10 @@ const AvisoClickNaTela = (gatilho) => {
 }
 
 const linksImgBack = [
+    './src/back/football1',
+    './src/back/neve_rosa.gif',
+    './src/back/coracoes1.gif',
+    './src/back/cafematica.gif',
     './src/back/poortugal.gif',
     './src/back/spain_flag.gif',
     './src/back/england_flag.gif',
@@ -67,6 +71,8 @@ const linksImgBack = [
 ]
 
 const linksImgFore = [
+    './src/fore/fore_football1.gif',
+    './src/fore/wine-loading.gif',
     './src/fore/14_4.gif',
     './src/fore/40oz.gif',
     './src/fore/bike.gif',
@@ -121,8 +127,10 @@ const linksImgFore = [
     './src/fore/wolfy.gif',
 ]
 
+// AUTOR DAS FRASES: Tainá Ariozi
+// SITE: https://www.42frases.com.br/frases-curtas-e-engracadas/
 const frases = [
-    'Sua opinião pra mim é igual a anúncio do Youtube: eu ignoro em 5 segundos',
+    'Com o tempo eu aprendi o significado de amor ao próximo. Não me ama? Próximo!',
     'Já vi muito amor eterno acabar em poucos segundos.',
     'Disseram que era inferno astral mas já faz uns meses que minha vida tá ruim.',
     'O melhor final feliz que existe é o final de semana.',
@@ -142,4 +150,17 @@ const frases = [
     'Eu não acordo de mau humor. Só acordo com preguiça de ser legal.',
     'Sabe aquele gelo que você me deu? Fiz um iglu.',
     'Estado Civil: Curtindo carreira solo com participações especiais.',
+    'Se a vida fosse fácil, bebê não nascia chorando.',
+    'Procura-se um relacionamento engraçado, porque sério eu estou desistindo!',
+    'Diga-me com quem andas e eu direi se vou junto ou não.',
+    'Depois da tempestade, vem a gripe.',
+    'Tudo na vida passa, menos a vontade de ganhar dinheiro dormindo.',
+    'Você caça um milhão de vagalumes pela pessoa, e ela não caça um mosquito por você.',
+    'Muitas coisas são resolvidas com gentilezas, outras, com cafuné e algumas só com bolo de chocolate.',
+    'Antes de definir meu abdômen, eu tenho que definir a minha vida.',
+    'O que seria da humanidade se não existisse o print?',
+    'O melhor mês do ano é aquele chamado férias!',
+    'Só saio de casa com a roupa amassada, porque a vida passa e a gente nem vê.',
+    '"A vida é feita de escolhas". Engraçado, eu escolhi ser rico e até agora nada!',
+    'Não tomo juízo porque já tomo vinho e não sou de misturar.',
 ]
