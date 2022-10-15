@@ -20,7 +20,7 @@
 - [x] Sistema de troca de textos.
 
 ## __❤ AGRADECIMENTOS__
-[Daniel Olivet](https://github.com/daniolivet)
+[@Daniel Olivet](https://github.com/daniolivet)
 "I have added new gifs to your pool and refactoring index.js code, I hope it comes in handing :)"
 
 ## __🛠 TECNOLOGIA__
