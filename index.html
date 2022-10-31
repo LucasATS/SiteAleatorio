@@ -1,5 +1,5 @@
 <!--
-    FEITO PELA THALIA https://github.com/LucasATS
+    FEITO POR: https://github.com/LucasATS
     INSPIRADO EM https://cachemonet.com/ (As imagens, gifs e o audio foram extraídas desse site)
     Os textos foram extraídos desse site https://www.42frases.com.br/frases-curtas-e-engracadas/
 -->
@@ -7,11 +7,39 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Config -->
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#D089FF">
-
     <title>🎲 Aleatório 🎲</title>
-    <link rel="shortcut icon" href="./src/eu_cartoon1.png" type="image/x-icon">
+    <meta name="theme-color" content="#D089FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- SEO -->
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="🎲 Aleatório 🎲">
+        <meta name="description" content="Um site divertido feito em react usando gifs aleatórios.">
+        <meta name="keywords" content="LucasATS, react, aleatório, frases, open, source, brazil, gifs, divertido">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="Portuguese">
+        <meta name="author" content="LucasATS">
+        <meta name="thumbnail" content="./src/preview-low.png">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://lucasats.github.io/SiteAleatorio/">
+        <meta property="og:title" content="🎲 Aleatório 🎲">
+        <meta property="og:description" content="Um site divertido feito em react usando gifs aleatórios.">
+        <meta property="og:image" content="./src/preview-low.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://lucasats.github.io/SiteAleatorio/">
+        <meta property="twitter:title" content="🎲 Aleatório 🎲">
+        <meta property="twitter:description" content="Um site divertido feito em react usando gifs aleatórios.">
+        <meta property="twitter:image" content="./src/preview-low.png">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./src/favicon.png" type="image/x-icon">
 
     <!-- React Online -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -21,28 +49,38 @@
     <!-- Offine -->
     <script src="./app.js"></script>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NMZNVXS');</script>
 </head>
 
 <body>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZNVXS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <!-- VISITE MINHA PÁGINA NO GITHUB :D -->
-    <style>
-        @media only screen and (orientation: portrait) {.github-img {width: 160px !important;}}
-        .github-img {width: 60px; border-radius: 360px;}
+    <style> 
+        @media only screen and (orientation: portrait) { .github-img { width: 60px !important; } }
+        .carimbo-github-img { width: 60px; border-radius: 360px; }
+        .carimbo-github-link{ position: fixed; right: 20px; bottom: 20px; z-index: 10; }
     </style>
-    <a title="Visite minha página no github" href="https://github.com/LucasATS"
-        style="position: fixed; right: 20px; bottom: 20px; z-index: 10;">
-        <img class="github-img" src="./src/github_icon.svg">
+    <a title="Visite minha página no github" 
+        href="https://github.com/LucasATS/SiteAleatorio#-site-aleat%C3%B3rio-"
+        class="carimbo-github-link">
+        <img class="carimbo-github-img" src="./src/github_icon.svg">
     </a>
 
     <!-- CLIQUE NA TELA -->
     <div id="box-click" onclick="AvisoClickNaTela(false);" class="box-click">
         <img style="width: 60px; border-radius: 360px;" src="./src/click.svg">
-        <p>CLIQUE NA TELA</p>
+        <p>CLIQUE NA TELA 😁</p>
     </div>
-
-    <!-- <h4 title="Feito pela: Thalia"><b>Feito pelo: Lucas</b></h4> -->
-    <!-- <h4 style="font-size: 4vh;" title="Feito pela: Thalia"><b>Feito pela: Thalia</b></h4> -->
 
     <div id="root"></div>
     <script type="text/babel">
