@@ -26,9 +26,9 @@
 <body>
 
     <!-- VISITE MINHA PÁGINA NO GITHUB :D -->
-    <style> 
-        @media only screen and (orientation: portrait) { .github-img { width: 160px !important; } }
-        .github-img { width: 60px; border-radius: 360px; }
+    <style>
+        @media only screen and (orientation: portrait) {.github-img {width: 160px !important;}}
+        .github-img {width: 60px; border-radius: 360px;}
     </style>
     <a title="Visite minha página no github" href="https://github.com/LucasATS"
         style="position: fixed; right: 20px; bottom: 20px; z-index: 10;">
@@ -79,13 +79,14 @@
                 console.log(linksImgBack[Random.back], linksImgFore[Random.fore], textos[Random.texto])
             };
 
-            // BUG :C A ideia é fazer o site atualizar as imagens automaticamente sem precisar ficar só clicando
+            // Faz o site atualizar as imagens automaticamente sem precisar ficar só clicando
             // porém sem perder a função de clicar para atualizar.
-            // React.useEffect(() => {
-            //     setTimeout(() => {
-            //         Mudar();
-            //     }, 4000);
-            // });
+            React.useEffect(() => {
+                const interval = setInterval(() => {
+                    Mudar();
+                }, 5000);
+                return () => clearInterval(interval);
+            });
 
             return (<>
                 <DivImagem classe="backImg" imagem={linksImgBack[Random.back]} />
@@ -103,4 +104,5 @@
         <source src="./src/windowdipper.mp3" type="audio/mpeg">
     </video>
 </body>
+
 </html>
